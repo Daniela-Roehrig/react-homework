@@ -1,0 +1,9 @@
+#root{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid navy;
+    padding: 25px;
+    background-color: aliceblue;
+}

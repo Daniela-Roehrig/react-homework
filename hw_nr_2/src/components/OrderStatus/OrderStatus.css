@@ -1,0 +1,13 @@
+.App-order{
+    padding: 12px 90px;
+    margin: 12px;
+    border: 2px solid navy;
+    border-bottom-right-radius: 180px;
+    border-top: none;
+    border-left: none;
+}
+
+.App-order h2{
+    padding-top: 10;
+    text-decoration: underline;
+}

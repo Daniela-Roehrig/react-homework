@@ -1,0 +1,8 @@
+h1 {
+    padding: 24px 70px;
+    margin: 12px;
+    border: 2px solid navy;
+    border-top-left-radius: 100px;
+    border-top: none;
+    border-right: none;
+}
