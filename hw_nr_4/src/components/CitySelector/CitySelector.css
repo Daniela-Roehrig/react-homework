@@ -1,0 +1,23 @@
+.selectCity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 12px;
+    width: 125px; 
+    font-size: medium;
+    background-color: rgb(115, 169, 116);
+    color: rgb(235, 228, 216);
+}
+
+.selectHeader {
+    color: darkgreen;
+}
+
+.selectorBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

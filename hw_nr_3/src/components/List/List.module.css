@@ -1,0 +1,45 @@
+.listContainer {
+    font-family: Arial, sans-serif;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    width: 450px;
+  }
+  
+  .peopleList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .personItem {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .removeBtn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .removeBtn:hover {
+    background-color: #c0392b;
+  }
+  
+  .listHeader {
+    color: rgb(13, 13, 95);
+    font-size: xx-large
+  }
+  

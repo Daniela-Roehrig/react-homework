@@ -1,0 +1,23 @@
+/* Aufgabe 1 */
+
+.ratingContainer {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  h1 {
+    font-size: xx-large;
+    color: #2d0246;
+  }
+  
+
+/* Aufgabe 2 */
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f3;
+    margin: 0;
+    padding: 0;
+  }
+  

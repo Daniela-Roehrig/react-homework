@@ -1,0 +1,35 @@
+body{
+    margin: 50px;
+    background-color: rgb(175, 228, 208);
+}
+
+.cityCard {
+    display: flex;
+    flex-direction: column; /* Elemente in einer vertikalen Spalte anordnen */
+    justify-content: flex-start; /* Stellen Sie sicher, dass die Elemente oben bleiben */
+    align-items: center;
+    border: 3px solid yellow;
+    color: darkgreen;
+    background-color: rgb(184, 222, 184);
+    border-radius: 24px;
+    width: 550px;
+    max-height: 550px; 
+    padding: 20px;
+  
+  }
+    
+  .cardPicture{
+    width: 220px;
+    height: 220px;
+  }
+  
+  .cardPara {
+    padding: 0px 30px;
+    font-size: 11px;
+  }
+  
+  .cardUl {
+    padding: 0px 30px;
+    font-size: 12px;
+  }
+  
