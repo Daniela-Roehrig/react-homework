@@ -1,0 +1,23 @@
+.iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--text-color);
+    border-radius: 65px;
+    padding: 38px 57px;
+    margin: 31px 0 195px;
+    width: 446px;   
+    height: 175px;
+}
+
+.linkIcon {
+    margin: 18px;
+    background-color: var(--bg-color);
+    border: none;
+    transition: transform 3s cubic-bezier(0, 1, 0.5, 1);
+}
+
+.linkIcon:hover{
+    transform: translateY(-2%);
+    background-color: transparent;
+}
