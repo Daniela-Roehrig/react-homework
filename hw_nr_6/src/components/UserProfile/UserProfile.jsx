@@ -7,26 +7,26 @@ const UserProfile = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Функция для загрузки данных пользователя
+  
   const fetchUser = async () => {
-    setLoading(true); // Устанавливаем состояние загрузки в true
-    setError(null); // Сбрасываем ошибки перед новой загрузкой
+    setLoading(true); 
+    setError(null); 
     try {
       const { data } = await axios.get('https://randomuser.me/api/');
-      setUser(data.results[0]); // Обновляем состояние с новыми данными пользователя
+      setUser(data.results[0]); 
     } catch {
-      setError('Error while loading'); // Если ошибка, выводим сообщение
+      setError('Error while loading'); 
     } finally {
-      setLoading(false); // Устанавливаем состояние загрузки в false
+      setLoading(false);
     }
   };
 
-  // Вызовем fetchUser при монтировании компонента
+  
   useEffect(() => {
     fetchUser();
   }, []);
 
-  // Обработчик для кнопки, который вызывает fetchUser
+  
   const handleFetchNewUser = () => {
     fetchUser();
   };
