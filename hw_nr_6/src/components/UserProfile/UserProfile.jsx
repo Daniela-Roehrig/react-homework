@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import styles from './UserProfile.module.css';
 
+
 const UserProfile = () => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  
   const fetchUser = async () => {
     setLoading(true); 
     setError(null); 
@@ -21,12 +21,10 @@ const UserProfile = () => {
     }
   };
 
-  
   useEffect(() => {
     fetchUser();
   }, []);
 
-  
   const handleFetchNewUser = () => {
     fetchUser();
   };
