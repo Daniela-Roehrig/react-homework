@@ -1,6 +1,6 @@
 
 
-const CitiesData = [
+const citiesData = [
   {
     name: "Токио",
     description: "Столица Японии, известная своими неоновыми огнями, многолюдностью и современной архитектурой.",
@@ -49,4 +49,4 @@ const CitiesData = [
   }
 ];
 
-export default CitiesData; 
+export default citiesData; 

@@ -1,23 +1,16 @@
-
 import './CityCard.css';
-import CitySelector from '../CitySelector/CitySelector'; // Importing CitySelector
-
-
-
-const CityCard = ({ city, cities, onCitySelect }) => {
+import CitySelector from '../CitySelector/CitySelector'; 
+const CityCard = ({ city }) => {
   if (!city) {
     return (
       <div className="cityCard">
-      
-        <CitySelector cities={cities} onCitySelect={onCitySelect} />
+        <p>Please choose a city!.</p>
       </div>
     );
   }
 
   return (
-      
     <div className="cityCard">
-      <CitySelector cities={cities} onCitySelect={onCitySelect} />
       <h2>{city.name}</h2>
       <img className="cardPicture" src={city.imageUrl} alt={city.name} />
       <p className="cardPara">{city.description}</p>
@@ -26,12 +19,8 @@ const CityCard = ({ city, cities, onCitySelect }) => {
           <li key={index}>{fact}</li>
         ))}
       </ul>
-    
-    
     </div>
   );
 };
 
 export default CityCard;
-
-

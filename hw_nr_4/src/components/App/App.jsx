@@ -1,16 +1,15 @@
-
 import { useState } from 'react';
-import CitiesData from '../CitiesData/CitiesData';
+import citiesData from '../CitySelector/citiesData'; 
 import CityCard from '../CityCard/CityCard';
+import CitySelector from '../CitySelector/CitySelector';
 import MathQuiz from '../MathQuiz/MathQuiz';
 import './App.css';
-
 
 function App() {
   const [selectedCity, setSelectedCity] = useState(null);
 
   const handleCitySelect = (cityName) => {
-    const city = CitiesData.find((city) => city.name === cityName);
+    const city = citiesData.find((city) => city.name === cityName);
     setSelectedCity(city);
   };
 
@@ -18,9 +17,10 @@ function App() {
     <>
       <h1 className="cityHeader">City Card</h1>
       <div className="App">
-        <CityCard city={selectedCity} cities={CitiesData} onCitySelect={handleCitySelect} />
+        <CitySelector onCitySelect={handleCitySelect} />
+        <CityCard city={selectedCity} />
       </div>
-      <div className='math-app'>
+      <div className="mathApp">
         <MathQuiz />
       </div>
     </>
@@ -28,6 +28,3 @@ function App() {
 }
 
 export default App;
-
-
-
