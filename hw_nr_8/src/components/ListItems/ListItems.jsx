@@ -1,5 +1,5 @@
-import React from 'react';  
-
+import React from 'react';
+import style from './ListItems.module.css'
 import { useState, useEffect } from 'react';
 
 const ListItems = () => {
@@ -13,18 +13,18 @@ const ListItems = () => {
 
   useEffect(() => {
     console.log('Компонент ListItems обновлен');
-  }, [/* items */])  
-  
-  
+  }, [/* items */])
+
+
 
   return (
     <div>
-      <input type="text" value={inputValue} onChange={(e) => setInputValue(e.target.value)} 
+      <input className={style.button} type="text" value={inputValue} onChange={(e) => setInputValue(e.target.value)}
       />
-      <button onClick={addItem}>Добавить элемент</button>
+      <button className={style.button} onClick={addItem}>Добавить элемент</button>
       <ul>
         {items.map((item, index) => (
-          <li key={index}>{item}</li>
+          <li className={style.list} key={index}><input className={style.input} type="checkbox"></input>{item}</li>
         ))}
       </ul>
     </div>

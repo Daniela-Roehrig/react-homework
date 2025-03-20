@@ -1,14 +1,14 @@
 
 import React from 'react';  
 
-import './App.css';
+import style from './App.module.css'
 import ListItems from '../ListItems/ListItems.jsx';  
 
 
 const App = () => {
   return (
-    <div className="App">
-      <h1>Список элементов</h1>
+    <div className={style.app}>
+      <h1 className={style.header}>Список элементов</h1>
       <ListItems />
     </div>
   );
