@@ -13,6 +13,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;  
     max-width: 1707px;
     background-color: var(--bg-color);;
     color:  var(--text-color);
@@ -35,3 +36,20 @@ body{
     font-size: 32px;
 }
 
+@media screen and (max-width: 768px) {
+    .header {
+        font-size: 2rem; /* Уменьшаем размер шрифта */
+    }
+
+    .list {
+        font-size: 1.5rem;
+    }
+
+    .blackContainer {
+        padding: 10px;
+    }
+
+    .first {
+        margin: 20px;
+    }
+}
