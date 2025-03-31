@@ -7,15 +7,13 @@ const ListItems = () => {
   const [inputValue, setInputValue] = useState('');
 
   const addItem = () => {
-    setItems([...items, inputValue]);
+    setItems(prevItems => [...prevItems, inputValue]); 
     setInputValue('');
   };
 
   useEffect(() => {
     console.log('Компонент ListItems обновлен');
   }, [/* items */])
-
-
 
   return (
     <div>
