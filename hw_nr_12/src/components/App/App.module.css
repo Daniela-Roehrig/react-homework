@@ -1,0 +1,20 @@
+
+.app {
+  margin-top: 50px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+h1 {
+  font-size: 24px;
+  text-decoration: overline solid 5px;
+}
+
+p {
+  font-size: 18px;
+}
