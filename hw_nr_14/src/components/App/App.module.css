@@ -1,0 +1,19 @@
+h1 {
+    color: goldenrod;
+    background-color: rgb(72, 38, 38);;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    width: 600px;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: antiquewhite;
+    width: 600px;
+    min-height: 400px;
+    padding: 0 25px;
+}
