@@ -30,7 +30,7 @@ export const contactsButtonStyle = css`
    display: flex;
    justify-content: center;
    align-items: center;
-   margin-top:31px
+   margin: 31px 0;
 `;
 
 export const socialLinksWrapper = css`

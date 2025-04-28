@@ -15,7 +15,7 @@ const Contacts = () => {
     return (
         <div>
             <Container>
-                <div /*  */>
+                <div>
                     <div>
                         <div css={sectionTitleWrapperStyle} >
                             <p css={sectionTitleHeadingStyle}>Контакты</p>
