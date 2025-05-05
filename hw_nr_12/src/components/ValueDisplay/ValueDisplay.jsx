@@ -1,16 +1,18 @@
-import { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
-function ValueDisplay({ currentValue, previousValue }) {
-  const prevValueRef = useRef(previousValue); 
- 
+function ValueDisplay({ value }) {
+  const previousValueRef = useRef('');
+  const [previousValue, setPreviousValue] = useState('');
+
   useEffect(() => {
-    prevValueRef.current = previousValue; 
-  }, [previousValue]); 
+    setPreviousValue(previousValueRef.current);
+    previousValueRef.current = value;
+  }, []);
 
   return (
     <div>
-      <p><strong>Current Value:</strong> {currentValue}</p>
-      <p><strong>Previous Value:</strong> {prevValueRef.current}</p>
+      <p><strong>Current Value:</strong> {value}</p>
+      <p><strong>Previous Value:</strong> {previousValue}</p>
     </div>
   );
 }
