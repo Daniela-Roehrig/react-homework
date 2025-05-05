@@ -7,7 +7,7 @@ function ValueDisplay({ value }) {
   useEffect(() => {
     setPreviousValue(previousValueRef.current);
     previousValueRef.current = value;
-  }, []);
+  }, [value]);
 
   return (
     <div>
