@@ -1,7 +1,7 @@
 import HomePage from '../../pages/HomePage/HomePage'
 import ArticleListPage from '../../pages/ArticleListPage/ArticleListPage'
 import ArticlePage from '../../pages/ArticlePage/ArticlePage'
-import { BrowserRouter as Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Navigation from "../Navigation/Navigation";
 
 import styles from'./App.module.css'
