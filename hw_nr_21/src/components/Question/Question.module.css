@@ -1,0 +1,13 @@
+.question {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.question h3{
+  margin-bottom: 5px;
+}
+
+input[type="radio"] {
+  accent-color: rgb(51, 156, 182);
+}

@@ -1,0 +1,15 @@
+.button{
+    background-color:rgb(39, 163, 194);
+    color:aliceblue;
+    padding: 8px;
+    width: 100%;
+    border: none;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.box{
+    padding: '20px';
+    width: 500px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
